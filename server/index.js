@@ -15,7 +15,7 @@ app.use(express.json())
 app.use("/api/auth" , userRoutes)
 app.use("/api/messages", messageRoute)
 
-mongoose.connect("mongodb+srv://sapfironDB:E03DnZOxKBGOcPUn@cluster0.bzuwe.mongodb.net/realChat",  {  
+mongoose.connect("MONGO__URL",  {  
     useNewUrlParser: true, 
     useUnifiedTopology: true
     }, () => console.log("DB connected")
